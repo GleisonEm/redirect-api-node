@@ -8,7 +8,7 @@ const app = express()
   .set("views", path.join(__dirname, "views"))
   .set("view engine", "ejs");
 
-app.get("/redirect", (req, res) => {
+app.get("/redirect/:fileId", (req, res) => {
   const fileId = req.params.fileId;
 
   if (!fileId) {
