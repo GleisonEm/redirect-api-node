@@ -9,7 +9,9 @@ const app = express()
   .set("view engine", "ejs");
 
 app.get("/redirecionar", (req, res) => {
-  res.redirect("https://www.google.com.br/");
+  res.redirect(
+    "http://145.14.134.34:3021/api/users/download/Gleison-Emanuel-1685842562150-87974006609.mp4"
+  );
 });
 
 app.get("/", (req, res) => res.render("pages/index"));
